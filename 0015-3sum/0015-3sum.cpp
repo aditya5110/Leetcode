@@ -16,7 +16,7 @@ public:
                 if(curr_sum == target){
                     vector<int> temp = {nums[i], nums[j], nums[k]};
                     ans.insert(temp);
-                    k--;
+                    j++;k--;
                     continue;
                 }
                 if(curr_sum > target){
