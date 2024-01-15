@@ -2,6 +2,14 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(), nums.end());
+        
+        if(nums.size() < 3){                // Base Case 1
+            return {};
+        }
+        if(nums[0] > 0){                    // Base Case 2
+            return {};
+        }
+        
         int target = 0;
         set<vector<int>> ans;
         int n = nums.size();
